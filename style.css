@@ -1,0 +1,361 @@
+:root {
+    --clr-primary: #010203;
+    --clr-primary-sub: #0e1822;
+    --clr-secondary: #FEFFFE;
+    --clr-secondary-sub: #b1b1b1;
+    --clr-accent: #03e9f4;
+    --clr-neutral-valid: #0CF574;
+    --clr-neutral-invalid: #EF233C;
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fz-loading-screen: clamp(60px, 13vw, 100px);
+    --fz-loading-para: clamp(10px, 4vw, 14px);
+    --fz-para: clamp(14px, 5vw, 25px);
+    --fz-heading-1: clamp(30px, 10vw, 50px);
+}
+
+
+
+/* INITIAL STYLES */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: var(--clr-accent);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+/* GLOBAL STYLING */
+a {
+    color: var(--clr-secondary);
+    text-decoration: none;
+    transition: 500ms;
+}
+a:hover{
+    color: var(--clr-accent);
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    /* Shake Animation for Javascript validation */
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+  
+
+/* PAGE LOADER */
+.page__loader {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    gap: 250px;
+    justify-content: flex-end;
+    padding: 0 3vw;
+    background-color: var(--clr-primary);
+    padding-bottom: 50px;
+    transition: 1s ease-in-out;
+    transform: none;
+}
+.page__loader > div:nth-child(1) {
+    gap: calc(var(--fz-loading-screen) / 2.5);
+}
+span.loader__heading{
+    font-size: var(--fz-loading-screen);
+    line-height: var(--fz-loading-screen);
+    font-weight: 700;
+    opacity: 0;
+    color: var(--clr-secondary-sub);
+    display: inline-block;
+    transform: translate(0, 50px) rotate(10deg);
+    animation-name: load;
+    animation-duration: 5000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.loader-1 {
+    animation-delay: 0ms;
+}
+.loader-2 {
+    animation-delay: 100ms;
+}
+.loader-3 {
+    animation-delay: 200ms;
+}
+.loader-4 {
+    animation-delay: 300ms;
+}
+.loader-5 {
+    animation-delay: 400ms;
+}
+.loader-6 {
+    animation-delay: 500ms;
+}
+.loader-7 {
+    animation-delay: 600ms;
+}
+.loader-8 {
+    animation-delay: 700ms;
+}
+.loader-9 {
+    animation-delay: 800ms;
+}
+@keyframes load {
+    0% {
+        opacity: 0;
+        color: var(--clr-secondary-sub);
+        transform: translate(0, 50px) rotate(10deg);
+    }
+    10% {
+        opacity: 0.1;
+        color: var(--clr-secondary-sub);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    40% {
+        opacity: 1;
+        color: var(--clr-secondary);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    80% {
+        opacity: 1;
+        color: var(--clr-secondary);
+        transform: translate(0, 0) rotate(0deg);
+        font-size: var(--fz-loading-screen);
+    }
+    100% {
+        opacity: 1;
+        color: var(--clr-accent);
+        transform: translate(0, -120px) rotate(0deg);
+        font-size: calc(var(--fz-loading-screen) / 2);
+    }
+}
+.page__loader > div:nth-child(2) .flex-row {
+    justify-content: space-between;
+    width: 90vw;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 415px) {
+    .page__loader > div:nth-child(2) .flex-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.page__loader > div:nth-child(2) {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+}
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+.page__loader p {
+    font-size: var(--fz-loading-para);
+    color: var(--clr-secondary-sub);
+    text-align: center;
+}
+.loader__form {
+    width: clamp(250px, 90vw, 400px);
+    height: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--clr-primary-sub);
+    padding: 30px 40px 20px 40px;
+    box-shadow: 0 15px 25px var(--clr-primary);
+    border-radius: 10px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 4500ms;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        height: 0px;
+    }
+    100% {
+        opacity: 1;
+        height: 200px;
+    }
+}
+.loader__form form {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 5000ms;
+}
+.loader__form input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: var(--fz-loading-para);
+    color: var(--clr-secondary-sub);
+    border: none;
+    border-bottom: 1px solid var(--clr-secondary);
+    outline: none;
+    background: transparent;
+}
+.loader__form label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: var(--fz-loading-para);
+    color: var(--clr-secondary);
+    pointer-events: none;
+    transition: .5s;
+    animation: none;
+}
+.loader__form input:focus ~ label,
+.loader__form input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--clr-accent);
+    font-size: calc(var(--fz-loading-para) - 3px);
+}
+.loader__form form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--clr-accent);
+    font-size: var(--fz-loading-para);
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+.loader__form a:hover {
+    background: var(--clr-accent);
+    color: var(--clr-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--clr-accent),
+                0 0 25px var(--clr-accent),
+                0 0 50px var(--clr-accent),
+                0 0 100px var(--clr-accent);
+} 
+.loader__form a span {
+    position: absolute;
+    display: block;
+}
+.loader__form a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--clr-accent));
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+} 
+.loader__form a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--clr-accent));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+@keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+}
+.loader__form a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--clr-accent));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+@keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+} 
+.loader__form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--clr-accent));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+}
+
+
+
+/* MAIN WRAPPER */
+.main__wrapper {
+    opacity: 0;
+    display: none;
+    transition: opacity 1000ms ease-in;
+}
+.main__container {
+    min-height: 100vh;
+    gap: 20px;
+}
