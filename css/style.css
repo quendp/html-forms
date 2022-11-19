@@ -73,6 +73,7 @@ a:hover{
     }
   
 
+
 /* PAGE LOADER */
 .page__loader {
     position: relative;
@@ -83,8 +84,9 @@ a:hover{
     padding: 0 3vw;
     background-color: var(--clr-primary);
     padding-bottom: 50px;
-    transition: transform 1000ms ease-in-out;
     transform: none;
+    transition: transform 1000ms ease-in-out;
+    overflow: hidden;
 }
 .page__loader > div:nth-child(1) {
     gap: calc(var(--fz-loading-screen) / 2.5);
@@ -360,6 +362,8 @@ span.loader__heading{
         width: 75px;
     }
 }
+
+
 
 /* MAIN WRAPPER */
 .main__wrapper {
