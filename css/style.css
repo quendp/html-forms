@@ -80,7 +80,7 @@ a:hover{
     position: relative;
     width: 100vw;
     min-height: 100vh;
-    gap: 200px;
+    gap: 220px;
     justify-content: flex-end;
     padding: 0 3vw;
     background-color: var(--clr-primary);
