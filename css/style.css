@@ -26,7 +26,6 @@
 }
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: var(--clr-accent);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -78,8 +77,8 @@ a:hover{
 .page__loader {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    gap: 250px;
+    min-height: 100vh;
+    gap: 200px;
     justify-content: flex-end;
     padding: 0 3vw;
     background-color: var(--clr-primary);
