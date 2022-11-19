@@ -1,4 +1,4 @@
-# HTML FORMS and JavaScript Validation - Responsive Design
+# HTML forms & JavaScript Validation - Responsive Design
 
 [View live website](https://quendp.github.io/html-forms/)
 
