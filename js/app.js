@@ -17,7 +17,9 @@ function loaderTransition() {
       main.style.display = 'block';
       setTimeout(() => (main.style.opacity = 1), 1000);
     }, 500);
+
     userName.textContent = userNameValue;
+
   } else if (userNameValue.length > 10){ //invalidate if user name exceeded 10 characters
     setTimeout(() => {
       userNameLabel.textContent = 'Name is too long!';
@@ -33,12 +35,12 @@ function loaderTransition() {
       setTimeout(() => ( userNameLabel.style.animation = 'none'), 500);
     }, 200);
   }
-}
+};
 
 // Validate text input 
 function textInvalid(valueString) {
   return /^\s*$/.test(valueString);
-}
+};
 
 
 // Call function on button click
