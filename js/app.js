@@ -4,7 +4,7 @@ const userNameInput = document.getElementById('userName');
 const loaderBtn = document.getElementById('submitUserName');
 const main = document.querySelector('.main__wrapper');
 
-const userName = document.getElementById('getUserName');
+const userName = document.getElementById('printUserName');
 
 
 // Verify user name and Create initial screen transition
@@ -18,7 +18,7 @@ function loaderTransition() {
       setTimeout(() => (main.style.opacity = 1), 1000);
     }, 500);
     userName.textContent = userNameValue;
-  } else if (userNameValue.length > 10){
+  } else if (userNameValue.length > 10){ //invalidate if user name exceeded 10 characters
     setTimeout(() => {
       userNameLabel.textContent = 'Name is too long!';
       userNameLabel.style.color = '#EF233C'
@@ -35,7 +35,7 @@ function loaderTransition() {
   }
 }
 
-// Validate text input based on https://stackoverflow.com/questions/58051935/i-want-to-validate-text-box-which-should-not-accept-just-white-space-but-it-shou
+// Validate text input 
 function textInvalid(valueString) {
   return /^\s*$/.test(valueString);
 }
