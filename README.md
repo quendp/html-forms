@@ -1,4 +1,4 @@
-# Simple Card UI 
+# HTML FORMS and JavaScript Validation - Responsive Design
 
 [View live website](https://quendp.github.io/html-forms/)
 

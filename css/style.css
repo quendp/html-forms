@@ -163,12 +163,6 @@ span.loader__heading{
     width: 90vw;
     margin-bottom: 30px;
 }
-@media only screen and (max-width: 415px) {
-    .page__loader > div:nth-child(2) .flex-row {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
 .page__loader > div:nth-child(2) {
     opacity: 0;
     animation-name: fade-in;
@@ -346,8 +340,26 @@ span.loader__heading{
       bottom: 100%;
     }
 }
-
-
+.loader-logo {
+    position: absolute;
+    width: 100px;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 425px) {
+    .page__loader > div:nth-child(2) .flex-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loader-logo {
+        width: 75px;
+    }
+}
 
 /* MAIN WRAPPER */
 .main__wrapper {
