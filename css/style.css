@@ -172,7 +172,7 @@ span.loader__heading {
     animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 1000ms;
+    animation-delay: 4500ms;
 }
 @keyframes fade-in {
     100% {
@@ -351,7 +351,7 @@ span.loader__heading {
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 1000ms;
-    animation-delay: 1000ms;
+    animation-delay: 4500ms;
     animation-fill-mode: forwards;
 }
 @media only screen and (max-width: 1024px) {
