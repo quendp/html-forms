@@ -1,3 +1,4 @@
+// LOADER SECTION JAVASCRIPT
 const loader = document.querySelector('.page__loader');
 const userNameLabel = document.getElementById('userNameLabel');
 const userNameInput = document.getElementById('userName');

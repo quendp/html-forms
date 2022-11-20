@@ -93,6 +93,177 @@
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                 </svg>
             </div>
+            <article>
+                <div>
+                    <h2>
+                        HTML Forms
+                    </h2>
+                    <p>
+                        An HTML form is used to collect user input. The user input is most often sent to a server for processing. To give you a brief demonstration, let us do a survey.
+                    </p>
+                </div>
+                <div class="form-wrapper" id="form-wrapper">
+                    <form action="" id="surveyForm">
+                        <!-- TAB NUMBER 1 -->
+                        <div class="form-container" id="formTab1">
+                            <h3>
+                                I. Simple Personality Test Survey
+                            </h3>
+                                <div class="input-box">
+                                    <input type="text" name="" required="" id="userFullName">
+                                    <label for="userFullName" id="userFullNameLabel">
+                                        Full Name
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="" required="" id="userPassword">
+                                    <label for="userPassword" id="userPasswordLabel">
+                                        Create Password
+                                    </label>
+                                </div>
+                        </div>
+                        <!-- TAB NUMBER 2 -->
+                        <div class="form-container" id="formTab2">
+                            <h3>
+                                II. Contact Information
+                            </h3>
+                                <div class="input-box">
+                                    <input type="email" name="" required="" id="userEmail">
+                                    <label for="userEmail" id="userEmailLabel">
+                                        Email Address
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="number" name="" required="" id="userPhoneNumber">
+                                    <label for="userPhoneNumber" id="userPhoneNumberLabel">
+                                        Phone Number
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" name="" required="" id="userAddress">
+                                    <label for="userAddress" id="userAddressLabel">
+                                        Full Address
+                                    </label>
+                                </div>
+                        </div>
+                        <!-- TAB NUMBER 3 -->
+                        <div class="form-container" id="formTab3">
+                            <h3>
+                                III. Personal Details
+                            </h3>
+                                <div class="input-box">
+                                    <input type="date" name="" required="" id="userBirthDate">
+                                    <label for="userBirthDate" id="userBirthDateLabel">
+                                        Birth Date
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="file" accept=".jpg, .png, .jpeg" name="" id="userPicture">
+                                    <label for="userPicture" id="userPictureLabel">
+                                        Upload ID Picture
+                                    </label>
+                                </div>
+                        </div>
+                        <!-- TAB NUMBER 4 -->
+                        <div class="form-container" id="formTab4">
+                            <h3>
+                                IV. Additional Information
+                            </h3>
+                                <div class="input-radio">
+                                    <p>
+                                        1. Who would you rather be?
+                                    </p>
+                                    <input type="radio" name="radioOption" id="radioOption1" value="The richest man in the planet">
+                                    <label for="radioOption1">The richest man in the planet</label> <br>
+                                    <input type="radio" name="radioOption" id="radioOption2" value="The smartest person in the world">
+                                    <label for="radioOption2">The smartest person in the world</label> <br>
+                                    <input type="radio" name="radioOption" id="radioOption3" value="A very famous celebrity">
+                                    <label for="radioOption3">A very famous celebrity</label> <br>
+                                    <input type="radio" name="radioOption" id="radioOption4" value="The most good-looking person in the world">
+                                    <label for="radioOption4">The most good-looking person in the world</label> <br>
+                                    <input type="radio" name="radioOption" id="radioOption5" value="A tree">
+                                    <label for="radioOption5">A tree</label>
+                                </div>
+                                <div class="input-checkbox">
+                                    <p>
+                                        2. What are  your hobbies?
+                                    </p>
+                                    <input type="checkbox" name="checkboxOPtion1" id="checkboxOPtion1" value="Programming">
+                                    <label for="checkboxOption1">Programming</label> <br>
+                                    <input type="checkbox" name="checkboxOPtion2" id="checkboxOPtion2" value="Sports">
+                                    <label for="checkboxOption2">Sports</label> <br>
+                                    <input type="checkbox" name="checkboxOPtion3" id="checkboxOPtion3" value="Reading">
+                                    <label for="checkboxOption3">Reading</label> <br>
+                                    <input type="checkbox" name="checkboxOPtion4" id="checkboxOPtion4" value="Watching anime or K-drama">
+                                    <label for="checkboxOption4">Watching anime or K-drama</label> <br>
+                                    <input type="checkbox" name="checkboxOPtion5" id="checkboxOPtion5" value="Eating">
+                                    <label for="checkboxOption5">Eating</label>
+                                </div>
+                                <div class="input-select">
+                                    <label for="selectOptions">
+                                        3. What time do you prefer to study?
+                                    </label>
+                                    <select name="selectOptions" id="selectOptions">
+                                        <option value="Early in the morning">Early in the morning</option>
+                                        <option value="During noon time">During noon time</option>
+                                        <option value="In the afternoon">In the afternoon</option>
+                                        <option value="In the evening">In the evening</option>
+                                        <option value="Late at night">Late at night</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <!-- TAB NUMBER 5 -->
+                        <div class="form-container" id="formTab5">
+                            <h3>
+                                V. Finish Up
+                            </h3>
+                                <div class="input-textarea">
+                                    <label for="textArea">
+                                        Thank you for answering all of the questions. To wrap things up, tell us something about yourself.
+                                    </label>
+                                    <textarea name="textArea" id="textArea" placeholder="Type here..."></textarea>
+                                </div>
+                        </div>
+                    </form>
+                    <div class="form-btn-container">
+                        <div class="form-btn-container-sub">
+                            <a id="prevBtn" href="#" onclick="nextPrev(-1)">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p id="prevBtnText">
+                                    Prev
+                                </p>
+                            </a>
+                        </div>
+                        <div class="form-btn-container-sub">
+                            <a id="nextBtn" href="#" onclick="nextPrev(1)">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p id="nextBtnText">
+                                    Next
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                    </div>
+                </div>
+                <div>
+                    <p id="submitFormMessage">
+                        Thank you for answering the Survey. We'll get back to you soon.
+                    </p>
+                </div>
+            </article>
         </section>
         <footer>
             <p>
@@ -104,6 +275,8 @@
             </div>
         </footer>
     </main>
-    <script src="js/app.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 </html>
