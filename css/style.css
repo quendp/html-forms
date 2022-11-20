@@ -380,12 +380,14 @@ span.loader__heading {
 /* MAIN WRAPPER */
 /* Hero Section */
 .main__wrapper {
+
     opacity: 0;
     display: none;
     transition: opacity 1000ms ease-in;
+
     /* opacity: 1;
-    display: block;
-    transition: opacity 1000ms ease-in; */
+    display: block; */
+
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
@@ -398,9 +400,8 @@ span.loader__heading {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 50px;
     text-align: center;
     height: 100%;
     transform-style: preserve-3d;
@@ -419,17 +420,58 @@ span.loader__heading {
 }
 .bg-parallax-top {
     transform: translateZ(-5px) scale(1.51);
-    margin-bottom: -400px;
+    margin-bottom: -200px;
 }
 h1 {
     font-size: var(--fz-heading-1);
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      var(--clr-accent) 0%,
+      #103a7a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-size: 200% auto;
     color: var(--clr-secondary);
-    text-shadow: 0 0 15px var(--clr-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s ease-in-out infinite;
+    margin-bottom: 20vh;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 .hero-section p {
-    color: var(--clr-accent);
-    padding: 2rem;
+    font-size: var(--fz-loading-para);
+    color: var(--clr-secondary);
+    text-shadow: 0 0 5px var(--clr-primary);
+    padding: 1.5rem;
+    margin-bottom: 5px;
 }
+.hero-section a {
+    border: 1px solid var(--clr-accent);
+    padding: 10px 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    font-size: var(--fz-loading-para);
+    letter-spacing: calc(var(--fz-loading-para) / 2);
+    color: var(--clr-accent);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.hero-section a:hover {
+    background: var(--clr-accent);
+    color: var(--clr-secondary);
+    box-shadow: 0 0 5px var(--clr-accent),
+                0 0 25px var(--clr-accent),
+                0 0 50px var(--clr-accent),
+                0 0 100px var(--clr-accent);
+} 
 
 /* About Section */
 .about-section {
