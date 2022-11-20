@@ -5,13 +5,17 @@
 ---
 
 ## Key Features
-    - Responsive Design
-    - Parallax Effect
-    - JavaScript Form Validation
-    - User-interactivity
+- Responsive Design
+- Parallax Effect
+- JavaScript Form Validation
+- User-interactivity
+
+
 
 ### Date Finished
 November 20, 2022
+
+
 
 ### Description 
 This project is also a requirement to our coding bootcamp. The main task is to 
@@ -28,12 +32,16 @@ and so far, I was able to maintain that upward trend. For me, the most challengi
 part on this one is the coding of JS, but fortunately, I am now starting to get the
 hang of it. Lastly, I hope you'll like my work. 
 
+
+
 ### Time Spent
 Two (2) days
 
+
 ---
 
+
 ### Credits
-    mountains-background.png Image from [Wallpaper Flare](https://www.wallpaperflare.com/mountains-night-stars-the-game-forest-view-birds-hills-wallpaper-qmzaw/download/1920x1080)
-    trees-foreground.png from [Pixabay](https://pixabay.com/vectors/mountain-landscape-sky-mountains-4823516/)
-    Form animation and color palette inspired by [Soufiane Khalfaoui Hassani](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda)
+mountains-background.png Image from [Wallpaper Flare](https://www.wallpaperflare.com/mountains-night-stars-the-game-forest-view-birds-hills-wallpaper-qmzaw/download/1920x1080)
+trees-foreground.png from [Pixabay](https://pixabay.com/vectors/mountain-landscape-sky-mountains-4823516/)
+Form animation and color palette inspired by [Soufiane Khalfaoui Hassani](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda)
