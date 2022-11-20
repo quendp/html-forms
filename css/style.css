@@ -448,9 +448,8 @@ h1 {
     0 0 100px var(--clr-accent);
     -webkit-text-stroke: 0.3px var(--clr-secondary);
     letter-spacing: calc(var(--fz-heading-1) / 9);
-    transform: translateZ(-5px) scale(1.51);
+    transform: translateY(50px) translateZ(-5px) scale(1.51);
     opacity: 0;
-    transform: translateY(50px);
     animation-name: fade-up;
     animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
@@ -460,7 +459,7 @@ h1 {
 @keyframes fade-up {
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) translateZ(-5px) scale(1.51);
     }
 }
 .hero-section p,
