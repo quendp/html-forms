@@ -398,7 +398,22 @@ span.loader__heading {
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
 }
+/* width */
+.main__wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  .main__wrapper::-webkit-scrollbar-track {
+    background: var(--clr-primary);
+  }
+  /* Handle */
+  .main__wrapper::-webkit-scrollbar-thumb {
+    background: var(--clr-accent);
+    background: linear-gradient(180deg, rgba(3,233,244,1) 0%, rgba(170,0,175,1) 100%);
+    border-radius: 10px;
+  }
 .hero-section{
     position: relative;
     display: flex;
@@ -420,21 +435,22 @@ span.loader__heading {
 }
 .bg-parallax-bot {
     transform: translateZ(-10px) scale(2.1);
+    box-shadow: #000000;
 }
 .bg-parallax-top {
-    transform: translateZ(-5px) scale(1.51);
+    transform: translateZ(0px) scale(1.01);
 }
 h1 {
     font-size: var(--fz-heading-1);
     text-transform: uppercase;
     color: var(--clr-accent);
-    -webkit-text-stroke: 0.3px var(--clr-secondary);
     margin-bottom: 20vh;
     text-shadow: 0 0 50px var(--clr-accent),
     0 0 25px var(--clr-accent),
     0 0 50px var(--clr-accent),
     0 0 100px var(--clr-accent);
     letter-spacing: calc(var(--fz-heading-1) / 9);
+    transform: translateZ(-5px) scale(1.51);
 }
 .hero-section p {
     font-size: var(--fz-loading-para);
@@ -442,6 +458,7 @@ h1 {
     text-shadow: 0 0 5px var(--clr-primary);
     padding: 1.5rem;
     margin-bottom: 5px;
+    z-index: 2;
 }
 .hero-section a {
     border: 1px solid var(--clr-accent);
@@ -454,6 +471,7 @@ h1 {
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    z-index: 2;
 }
 .hero-section a:hover {
     background: var(--clr-accent);
@@ -473,9 +491,16 @@ h1 {
 }
 .about-section article {
     max-width: 1024px;
-    padding: 2rem;
-    margin: 100px 0 -200px 0;
+    padding: 3rem;
+    margin: 100px 2rem -300px 2rem;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0px var(--clr-accent);
 }
 .about-section h2 {
     font-size: calc(var(--fz-para) * 1.3);
@@ -487,14 +512,8 @@ h1 {
     color: var(--clr-secondary-sub);
 }
 
-/* Content Section */
-.content {
-    position: relative;
-    min-height: 100vh;
-    background: white;
-}
 /* Shape divider */
-.custom-shape-divider-top-1668883077 {
+.custom-shape-divider-top-1668931134 {
     position: absolute;
     top: 0;
     left: 0;
@@ -502,24 +521,57 @@ h1 {
     overflow: hidden;
     line-height: 0;
 }
-
-.custom-shape-divider-top-1668883077 svg {
+.custom-shape-divider-top-1668931134 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 400px;
+    width: calc(150% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
 }
-
-.custom-shape-divider-top-1668883077 .shape-fill {
+.custom-shape-divider-top-1668931134 .shape-fill {
     fill: #000000;
 }
+
+/* Content Section */
+.content {
+    position: relative;
+    min-height: 1000px;
+    background: var(--clr-primary-sub);
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 5vw;
+    color: var(--clr-secondary);
+    background: var(--clr-primary);
+    font-size: var(--fz-loading-para);
+    gap: 10px
+}
+footer > p, footer > div {
+    margin: 0 20px;
+    text-align: center;
+}
+footer > div {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+footer > div a {
+    margin: 0 10px;
+}
+
+
+/* MEDIA QUERIES */
 @media (max-width: 767px) {
     .custom-shape-divider-top-1668883077 svg {
         width: calc(100% + 1.3px);
         height: 100px;
     }
     .about-section article {
-        margin: 50px 0 -50px 0;
+        padding: 1.5rem;
     }
 }
 @media (max-width: 1024px) {
@@ -527,8 +579,7 @@ h1 {
         width: calc(100% + 1.3px);
         height: 200px;
     }
-    .about-section article {
-        margin: 50px 0 -50px 0;
+    footer {
+        justify-content: center;
     }
 }
-/* Footer Section */
