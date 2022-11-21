@@ -13,12 +13,12 @@
 - Dark theme
 
 
-## 📌 Date Finished
+## 🗓️ Date Finished
 November 20, 2022
 
 
 
-## 📌 Description 
+## 📝 Description 
 This project is also a requirement to our coding bootcamp. The main task is to 
 utilize various HTML form elements as creatively as possible. This time around, 
 I tried using css animations through keyframes and transitions, experimented on
@@ -35,14 +35,14 @@ hang of it. Lastly, I hope you'll like my work.
 
 
 
-## 📌 Time Spent
+## ⌛ Time Spent
 Two (2) days
 
 
 ---
 
 
-### 📌 Credits
-mountains-background.png Image from [Wallpaper Flare](https://www.wallpaperflare.com/mountains-night-stars-the-game-forest-view-birds-hills-wallpaper-qmzaw/download/1920x1080)<br>
-trees-foreground.png from [Pixabay](https://pixabay.com/vectors/mountain-landscape-sky-mountains-4823516/)<br>
+### 💛 Credits 
+[Mountains Background](images/mountains-3.jpg) Image from [Wallpaper Flare](https://www.wallpaperflare.com/mountains-night-stars-the-game-forest-view-birds-hills-wallpaper-qmzaw/download/1920x1080)<br>
+[Trees Foreground](images/trees-foreground-2.png) from [Pixabay](https://pixabay.com/vectors/mountain-landscape-sky-mountains-4823516/) - edited by me<br>
 Form animation and color palette inspired by [Soufiane Khalfaoui Hassani](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda)
