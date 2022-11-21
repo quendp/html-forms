@@ -43,6 +43,6 @@ Two (2) days
 
 
 ### 💛 Credits 
-[Mountains Background](images/mountains-3.jpg) Image from [Wallpaper Flare](https://www.wallpaperflare.com/mountains-night-stars-the-game-forest-view-birds-hills-wallpaper-qmzaw/download/1920x1080)<br>
-[Trees Foreground](images/trees-foreground-2.png) from [Pixabay](https://pixabay.com/vectors/mountain-landscape-sky-mountains-4823516/) - edited by me<br>
-Form animation and color palette inspired by [Soufiane Khalfaoui Hassani](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda)
+- [Mountains Background](images/mountains-3.jpg) Image from [Wallpaper Flare](https://www.wallpaperflare.com/mountains-night-stars-the-game-forest-view-birds-hills-wallpaper-qmzaw/download/1920x1080)<br>
+- [Trees Foreground](images/trees-foreground-2.png) from [Pixabay](https://pixabay.com/vectors/mountain-landscape-sky-mountains-4823516/) - edited by me<br>
+- Form animation and color palette inspired by [Soufiane Khalfaoui Hassani](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda)
